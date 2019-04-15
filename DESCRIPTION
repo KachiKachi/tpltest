@@ -1,0 +1,17 @@
+Package: tpltest
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors: Yao Guan <guanyaociqi@gmail.com> [aut, cre]
+Maintainer: The package maintainer <guanyaociqi@gmail.com>
+Description: Top-line furniture analysis work
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    RODBC,
+    stringr
+RoxygenNote: 6.1.1
+URL: http://github.com/KachiKachi/tpltest
