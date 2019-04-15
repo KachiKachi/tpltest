@@ -78,10 +78,7 @@ result$amount <- -result$amount
 result$stOverP <- result$storage/(result$amount-result$qty*result$ITEM_UNIT_PRICE)
 result <- filter(result,storage!=0)
 result <- unique(result)
-
-
 write.csv(result,paste0("N:/E Commerce/Public Share/Dot Com - Wayfair/CG Slow Item/",Sys.Date(),"StorageMargin.csv"))
-
 
 ### monthly
 rplall <- read.csv("C:/Users/yao.Guan/Desktop/usefulData/rplall.csv")
