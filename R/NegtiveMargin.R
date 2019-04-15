@@ -36,8 +36,7 @@ itemprice<-sqlQuery(channel,
                     from Items i, ITEM_PRICES p
                     where p.NAME = 'Fern FOB Cost + $2/cuft' and p.ITEM_ID = Item_ID
                     ")
-head(itemprice)
-
+  
 ##get sales
 SIteminvoic <- sqlQuery(channel,
                         "select
@@ -73,11 +72,6 @@ SIteminvoic <- sqlQuery(channel,
 
                         group by ITEMS.Name
                         ")
-
-
-#locations.LOC_ID in ('CA-F','IL-S,CG-ER') and
-head(SIteminvoic)
-
 
 ##aged result
 result <- merge(seCG88,itemprice, by= "Name",all.x = TRUE )
@@ -146,9 +140,6 @@ SIteminvoic <- sqlQuery(channel,
                         group by ITEMS.Name
                         ")
 
-#locations.LOC_ID in ('CA-F','IL-S,CG-ER') and
-head(SIteminvoic)
-
 ##aged result
 result <- merge(seCG88,itemprice, by= "Name",all.x = TRUE )
 result <- merge(result,SIteminvoic, by.x = "Name", by.y = "name", all.x = TRUE)
@@ -157,6 +148,6 @@ result$amount <- -result$amount
 result$stOverP <- result$storage/(result$amount-result$qty*result$ITEM_UNIT_PRICE)
 result <- filter(result,storage!=0)
 result <- unique(result)
-return(print(result))
+write.csv(result,paste0("N:/E Commerce/Public Share/Dot Com - Wayfair/CG Slow Item/",Sys.Date(),"(M)StorageMargin.csv"))
 }
 
