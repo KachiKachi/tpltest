@@ -43,7 +43,6 @@ SIteminvoic <- sqlQuery(channel,
                         ITEMS.Name as name,
                         sum(TRANSACTION_LINES.ITEM_COUNT) as 'qty',
                         sum(TRANSACTION_LINES.AMOUNT) as 'amount'
-
                         from
                         TRANSACTION_LINES
                         join (TRANSACTIONS join ENTITY on TRANSACTIONS.ENTITY_ID=ENTITY.ENTITY_ID)
@@ -54,7 +53,6 @@ SIteminvoic <- sqlQuery(channel,
                         TRANSACTION_LINES.AMOUNT is not null and
                         TRANSACTIONS.TRANSACTION_TYPE='Sales Order' and
                         TRANSACTIONS.STATUS='Billed' and
-
                         ENTITY.Name in ('Wayfair.com',
                         'Castlegate - CA Perris',
                         'Castlegate - CA Perris SP',
@@ -69,7 +67,6 @@ SIteminvoic <- sqlQuery(channel,
                         'JossandMain.com') and
                         DATE_CREATED BETWEEN TO_DATE('2018-OCT-01', 'YYYY-MON-DD')
                         AND TO_DATE('2018-DEC-31', 'YYYY-MON-DD')
-
                         group by ITEMS.Name
                         ")
 
@@ -121,7 +118,6 @@ SIteminvoic <- sqlQuery(channel,
                         TRANSACTION_LINES.AMOUNT is not null and
                         TRANSACTIONS.TRANSACTION_TYPE='Sales Order' and
                         TRANSACTIONS.STATUS='Billed' and
-
                         ENTITY.Name in ('Wayfair.com',
                         'Castlegate - CA Perris',
                         'Castlegate - CA Perris SP',
@@ -136,7 +132,6 @@ SIteminvoic <- sqlQuery(channel,
                         'JossandMain.com') and
                         DATE_CREATED BETWEEN TO_DATE('2018-DEC-01', 'YYYY-MON-DD')
                         AND TO_DATE('2018-DEC-31', 'YYYY-MON-DD')
-
                         group by ITEMS.Name
                         ")
 
