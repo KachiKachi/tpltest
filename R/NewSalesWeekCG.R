@@ -1,13 +1,18 @@
 ##update TLinv first
 
-#' Title
-#'
+#' Title NewSalesWeekCG
+#' This file is based on Jessy's original slow seller report. Will tell you howmany weeks the inventory can feed for each items.
+#' And will tell you the result for current inventory, the inventroy after 30 days and the inventory after 60 days. 
+#' You can also find CG's feeding week.
+#' All the sales week are calculate base on either the recent one mont's sales record or 6 month's sales record.
+#' You can also find the sales speed and in-stock-rate in the output report.
+#' 
 #' @param nsid Netsuit ID
 #' @param nspwd Netsuit password
 #' @param y yao or not
 #'
-#' @return
-#' @export
+#' @return a csv file in N:/E Commerce/Public Share/Dot Com - Promotion indicator/
+#' @export CGmerge a report shows howmany weeks the inventory will last
 #'
 #' @examples
 SaleWeekCG <- function(nsid,nspwd,y){
