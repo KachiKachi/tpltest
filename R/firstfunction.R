@@ -18,6 +18,6 @@ change <- function(d, s,j,t) {
 
 # #Ctrl+Shift+Alt+R
 # devtools::document()
-# devtools::use_package("dplyr")
+# 
 # Author@R: person("Yao", "Guan", email = "guanyaociqi@gmail.com",
 #                   role = c("aut", "cre"))

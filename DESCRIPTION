@@ -12,6 +12,10 @@ LazyData: true
 Imports: 
     dplyr,
     RODBC,
-    stringr
+    stringr,
+    xlsx,
+    data.table,
+    readxl,
+    lubridate
 RoxygenNote: 6.1.1
 URL: http://github.com/KachiKachi/tpltest

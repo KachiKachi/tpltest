@@ -12,8 +12,13 @@ CG_Nmargin(nsid, nspwd)
 \item{nspwd}{Netsuit password}
 }
 \value{
-result
+Three month CG storage fee over Profit
+        One month CG storage fee over Profit
+        Two files in N:/E Commerce/Public Share/Dot Com - Wayfair/CG Slow Item/
 }
 \description{
 CG_Nmargin
+}
+\examples{
+
 }
