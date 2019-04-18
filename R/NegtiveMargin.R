@@ -4,10 +4,13 @@
 #' @param nsid Netsuit ID
 #' @param nspwd Netsuit password
 #'
-#' @return result
-#' @export
+#' @return Three month CG storage fee over Profit
+#'         One month CG storage fee over Profit
+#'         Two files in N:/E Commerce/Public Share/Dot Com - Wayfair/CG Slow Item/
+#' @export result a data frame
 #'
 #' @examples
+#' 
 CG_Nmargin <- function(nsid,nspwd){
 library(RODBC)
 library(dplyr)
