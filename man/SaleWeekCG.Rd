@@ -2,7 +2,7 @@
 % Please edit documentation in R/NewSalesWeekCG.R
 \name{SaleWeekCG}
 \alias{SaleWeekCG}
-\title{Title NewSalesWeekCG}
+\title{NewSalesWeekCG}
 \usage{
 SaleWeekCG(nsid, nspwd, y)
 }
@@ -17,5 +17,5 @@ SaleWeekCG(nsid, nspwd, y)
 a csv file in N:/E Commerce/Public Share/Dot Com - Promotion indicator/
 }
 \description{
-Title NewSalesWeekCG
+NewSalesWeekCG
 }
