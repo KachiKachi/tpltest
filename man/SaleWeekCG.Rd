@@ -2,12 +2,7 @@
 % Please edit documentation in R/NewSalesWeekCG.R
 \name{SaleWeekCG}
 \alias{SaleWeekCG}
-\title{Title NewSalesWeekCG
-This file is based on Jessy's original slow seller report. Will tell you howmany weeks the inventory can feed for each items.
-And will tell you the result for current inventory, the inventroy after 30 days and the inventory after 60 days. 
-You can also find CG's feeding week.
-All the sales week are calculate base on either the recent one mont's sales record or 6 month's sales record.
-You can also find the sales speed and in-stock-rate in the output report.}
+\title{Title NewSalesWeekCG}
 \usage{
 SaleWeekCG(nsid, nspwd, y)
 }
@@ -23,9 +18,4 @@ a csv file in N:/E Commerce/Public Share/Dot Com - Promotion indicator/
 }
 \description{
 Title NewSalesWeekCG
-This file is based on Jessy's original slow seller report. Will tell you howmany weeks the inventory can feed for each items.
-And will tell you the result for current inventory, the inventroy after 30 days and the inventory after 60 days. 
-You can also find CG's feeding week.
-All the sales week are calculate base on either the recent one mont's sales record or 6 month's sales record.
-You can also find the sales speed and in-stock-rate in the output report.
 }
