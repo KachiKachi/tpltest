@@ -2,7 +2,7 @@
 % Please edit documentation in R/WeekOverWeekSales.R
 \name{wow}
 \alias{wow}
-\title{WOW}
+\title{Title}
 \usage{
 wow(nsid, nspwd)
 }
@@ -12,6 +12,5 @@ wow(nsid, nspwd)
 \item{nspwd}{Netsuit password}
 }
 \description{
-Week over week report evaluate how much sales order number and revenue different from last week and last year`s conterpart.
-This report also compare the acumulated proformence with last year. All the result marked with differencial percentage by account.
+Title
 }
