@@ -10,18 +10,14 @@
 #' 
 #' @param nsid Netsuit ID
 #' @param nspwd Netsuit password
-#' @param y yao or not
+#' 
 #'
 #' @return a csv file in N:/E Commerce/Public Share/Dot Com - Promotion indicator/
 #' @export CGmerge a report shows howmany weeks the inventory will last
 #'
 #' @examples
-SaleWeekCG <- function(nsid,nspwd,y){
+SaleWeekCG <- function(nsid,nspwd){
 
-if (y=="yao"){
-  uid="yao.guan@top-line.com"
-  pwd="NetYG@Chicago"
-}
 
 library(xlsx)
 library(dplyr)
