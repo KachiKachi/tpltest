@@ -69,7 +69,6 @@ new<-sqlQuery(channel,paste0(
   ) and
   DATE_LAST_MODIFIED BETWEEN TO_DATE( '" , a[m] ,"', 'YYYY-MM-DD')
   AND TO_DATE('" , b[m]+1 ,"', 'YYYY-MM-DD')
-  
   group by ITEMS.ITEM_ID" ))
 
 
