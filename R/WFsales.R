@@ -15,16 +15,14 @@ WFsales <- function(nsid,nspwd,early,late, item){
   library(RODBC)
   library(dplyr)
   library(stringr)
-  
-  channel <- odbcConnect("NetSuite", uid=nsid, pwd=nspwd)
-  
+channel <- odbcConnect("NetSuite", uid=nsid, pwd=nspwd)
   cost<-sqlQuery(channel,
                  "select  i.Name, p.ITEM_UNIT_PRICE, i.WAYFAIR_COM_PARTNER_SKU,  i.WAYFAIR_COM_SKU
                  from Items i, ITEM_PRICES p
                  where p.NAME = 'Fern FOB Cost + $2/cuft' and p.ITEM_ID = Item_ID
                  ")
   
-  WFprice<-sqlQuery(channel,
+ WFprice<-sqlQuery(channel,
                     "select  i.Name, p.ITEM_UNIT_PRICE, i.WAYFAIR_COM_PARTNER_SKU
                     from Items i, ITEM_PRICES p
                     where p.NAME = 'Dot Com (Wayfair.com)' and p.ITEM_ID = Item_ID
