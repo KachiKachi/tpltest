@@ -22,7 +22,6 @@ channel <- odbcConnect("NetSuite", uid=nsid, pwd=nspwd)
 CG88 <- read.csv("N:/E Commerce/Public Share/Dot Com - Wayfair/Sales predict/Increasing inventory/fileCG88auto.csv")
 CG88 <- CG88[,c(1,(ncol(CG88)-90)
                 :ncol(CG88))]
-dim(CG88)
 CG88 <-
   CG88 %>%
   mutate(sum90 = rowSums(.[2:ncol(CG88)])) %>%
@@ -91,7 +90,6 @@ channel <- odbcConnect("NetSuite", uid="yao.guan@top-line.com", pwd="NetYG@Chica
 CG88 <- read.csv("N:/E Commerce/Public Share/Dot Com - Wayfair/Sales predict/Increasing inventory/fileCG88auto.csv")
 CG88 <- CG88[,c(1,(ncol(CG88)-30)
                 :ncol(CG88))]
-dim(CG88)
 CG88 <-
   CG88 %>%
   mutate(sum90 = rowSums(.[2:ncol(CG88)])) %>%
